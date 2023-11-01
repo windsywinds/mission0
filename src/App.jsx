@@ -1,4 +1,6 @@
 
+
+
 function App() {
   
 
@@ -32,7 +34,7 @@ function App() {
         {/* End of menu display */}
 
       </nav>
-      <section className="flex flex-col w-full h-1/2 bg-[url('/src/assets/splash.jpg')] bg-cover text-white items-center drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)] ">
+      <section className="flex flex-col w-full h-1/2 bg-[url('/assets/splash.jpg')] bg-cover text-white items-center drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)] ">
         <div className="flex flex-col justify-start w-2/3">
         <p className="text-4xl md:text-6xl font-bold ml-8 mt-12 " style={{ textShadow: '0 0.35rem 0.35rem rgba(0, 0, 0, 0.55)' }}>Lorem Ipsum </p>
         <p className="text-4xl md:text-6xl font-bold pl-8  pb-4" style={{ textShadow: '0 0.35rem 0.35rem rgba(0, 0, 0, 0.55)' }}>dolar sit amet</p> 
@@ -60,7 +62,7 @@ function App() {
               {/* Card 1 */}
 
             <div className="border-2 border-slate-500 rounded-md overflow-hidden " >
-                  <img src="/src/assets/splashlg.jpg" className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
+                  <img src="/assets/card1.jpg" className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
     <div className="w-full p-4 ">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold" > Title</h3>
         <h3 className="text-lg md:text-sm mb-2 md:mb-3" > slug</h3>
@@ -70,7 +72,7 @@ function App() {
 
       {/* Card 2 */}
     <div className="border-2 border-slate-500 rounded-md overflow-hidden" >
-                  <img src="/src/assets/splashlg.jpg" className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
+                  <img src="/assets/card1.jpg" className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
     <div className="w-full p-4">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold" > Title</h3>
         <h3 className="text-lg md:text-sm mb-2 md:mb-3" > slug</h3>
@@ -78,7 +80,7 @@ function App() {
     </div>
       {/* Card 3 */}
     <div className="border-2 border-slate-500 rounded-md overflow-hidden" >
-                  <img src="/src/assets/splashlg.jpg" className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
+                  <img src="/assets/card1.jpg" className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
     <div className="w-full p-4">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold" > Title</h3>
         <h3 className="text-lg md:text-sm mb-2 md:mb-3" > slug</h3>
