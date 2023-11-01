@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/windsywinds/mission0/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,7 +22,7 @@
   <p align="center">
     Creating a prototype website from a wireframe
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/windsywinds/mission0/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://swmission0.netlify.app">View Demo</a>
@@ -76,8 +76,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 * [![Vite]][Vite-url]
-* [![React][React.js]][React-url]
-* [![Tailwind CSS][tailwindcss.css]][Tailwindcss-url]
+* [![React]][React-url]
+* [![Tailwind CSS]][Tailwindcss-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,24 +108,23 @@ npm i
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [vite-url]: https://vitejs.dev/
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/windsywinds/mission0.svg?style=for-the-badge
+[contributors-url]: https://github.com/windsywinds/mission0/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/windsywinds/mission0.svg?style=for-the-badge
+[forks-url]: https://github.com/windsywinds/mission0/network/members
+[stars-shield]: https://img.shields.io/github/stars/windsywinds/mission0.svg?style=for-the-badge
+[stars-url]: https://github.com/windsywinds/mission0/stargazers
+[issues-shield]: https://img.shields.io/github/issues/windsywinds/mission0.svg?style=for-the-badge
+[issues-url]: https://github.com/windsywinds/mission0/issues
+[license-shield]: https://img.shields.io/github/license/windsywinds/mission0.svg?style=for-the-badge
+[license-url]: https://github.com/windsywinds/mission0/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/windsor-sam/
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Tailwind.css]: https://camo.githubusercontent.com/dec48fb0af4a708748ea594bb1c24af9e1ec041a7482162cec3f5e5392cc98cb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374796c652d7461696c77696e646373732d333842324142
 [Tailwindcss-url]: https://tailwindcss.com
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
