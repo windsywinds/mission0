@@ -5,17 +5,13 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
-<!-- PROJECT LOGO -->
+
 <br />
 <div align="center">
-  <a href="https://github.com/windsywinds/mission0/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+ 
 
 <h3 align="center">Mission 0</h3>
 
@@ -47,11 +43,9 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    
   </ol>
 </details>
 
@@ -73,24 +67,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
 ### Installation
 
-npm i
+run npm i from local machine
    
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
