@@ -77,7 +77,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 
 * [![React][React.js]][React-url]
-* [![Tailwind][tailwind.com]][Tailwind-url]
+* [![Tailwindcss][tailwindcss.com]][Tailwindcss-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
