@@ -75,7 +75,7 @@
   ```
 2. Install packages 
   ```sh
-  run npm i from local machine
+  npm i
   ```
 3. Run dev server
   ```sh
