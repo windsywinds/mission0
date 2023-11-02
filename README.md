@@ -69,8 +69,18 @@
 
 ### Installation
 
-run npm i from local machine
-   
+1. Clone repo
+  ```sh
+  gitclone https://github.com/windsywinds/mission0.git
+  ```
+2. Install packages 
+  ```sh
+  run npm i from local machine
+  ```
+3. Run dev server
+  ```sh
+  npm run dev
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

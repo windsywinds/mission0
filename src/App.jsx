@@ -1,45 +1,92 @@
-
-import card1 from './assets/card1.jpg'
-import screenshot from './assets/screenshot.jpg'
-
+import { useState } from "react";
+import card1 from "./assets/card1.jpg";
+import screenshot from "./assets/screenshot.jpg";
 
 function App() {
-  
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <div className="flex flex-col w-full h-screen ">
       <nav className="flex flex-row w-full min-h-[10vh] shadow-xl justify-between px-4 sticky top-0 z-10 bg-white">
         <div className="flex flex-row items-center">
-        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="grey" />
-    </svg>
-        <p>My Company</p>
+          <svg
+            width="100"
+            height="100"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="30"
+              stroke="black"
+              strokeWidth="3"
+              fill="grey"
+            />
+          </svg>
+          <p>My Company</p>
         </div>
-          {/*Start of menu display */}
+        {/*Start of menu display */}
         <div className="flex flex-row">
-
           {/* Desktop menu display */}
-            <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <button className="inline-block px-2 py-1 font-semibold border-2 border-slate-800  drop-shadow-md">
+              Login
+            </button>
+          </div>
+
+          {/* Mobile menu display */}
+          <div className="flex md:hidden items-center z-10">
+            <button id="mobile-nav " onClick={toggleMobileMenu}>
+              <svg
+                className="block h-4 w-4 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden fixed top-[10vh] right-0 w-1/2 sm:w-1/3 h-auto flex flex-col justify-center z-2 bg-white">
+            <div className="flex flex-col bg-white p-4 text-right space-y-2 items-center ">
               <a href="#">Menu 1</a>
               <a href="#">Menu 2</a>
               <a href="#">Menu 3</a>
-              <button className="inline-block px-2 py-1 font-semibold border-2 border-slate-800  drop-shadow-md" >Login</button>
             </div>
-
-              {/* Mobile menu display */}
-            <div className="flex md:hidden items-center">              
-              <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-				</svg>
+            <div className="flex flex-col bg-white p-4 items-end justify-end text-right ">
+              <button className="inline-block px-2 py-1 font-semibold border-2 border-slate-800  drop-shadow-md">
+                Login
+              </button>
             </div>
-        </div>
+          </div>
+        )}
         {/* End of menu display */}
-
       </nav>
-      <section className="flex flex-col w-full h-1/2 bg-[url('./assets/splash.jpg')] bg-cover text-white items-center drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)] ">
+
+      <section className="flex flex-col w-full h-1/2 bg-[url('./assets/splash.jpg')] bg-cover text-white items-center drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)] z-1">
         <div className="flex flex-col justify-start w-2/3">
-        <p className="text-4xl md:text-6xl font-bold ml-8 mt-12 " style={{ textShadow: '0 0.35rem 0.35rem rgba(0, 0, 0, 0.55)' }}>Lorem Ipsum </p>
-        <p className="text-4xl md:text-6xl font-bold pl-8  pb-4" style={{ textShadow: '0 0.35rem 0.35rem rgba(0, 0, 0, 0.55)' }}>dolar sit amet</p> 
+          <p
+            className="text-4xl md:text-6xl font-bold ml-8 mt-12 "
+            style={{ textShadow: "0 0.35rem 0.35rem rgba(0, 0, 0, 0.55)" }}
+          >
+            Lorem Ipsum{" "}
+          </p>
+          <p
+            className="text-4xl md:text-6xl font-bold pl-8  pb-4"
+            style={{ textShadow: "0 0.35rem 0.35rem rgba(0, 0, 0, 0.55)" }}
+          >
+            dolar sit amet
+          </p>
         </div>
 
         <div className="flex  justify-center pb-8 w-[80%] sm:max-w-[30%] items-end h-full">
@@ -53,47 +100,59 @@ function App() {
         </div>
       </section>
 
-        {/* Start of card area */}
+      {/* Start of card area */}
       <section className="flex pt-8 pb-8 w-full justify-center items-center">
-      <div className="flex flex-col w-[90%] md:flex-row items-center justify-center ">
+        <div className="flex flex-col w-[90%] md:flex-row items-center justify-center ">
+          <div className="grid md:w-auto w-[80%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {/* Card 1 */}
 
-        
-            
-            <div className="grid md:w-auto w-[80%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-
-              {/* Card 1 */}
-
-            <div className="border-2 border-slate-500 rounded-md overflow-hidden " >
-                  <img src={card1} className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
-    <div className="w-full p-4 ">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold" > Title</h3>
-        <h3 className="text-lg md:text-sm mb-2 md:mb-3" > slug</h3>
-    </div>
-    </div>
-
-
-      {/* Card 2 */}
-    <div className="border-2 border-slate-500 rounded-md overflow-hidden" >
-                  <img src={card1} className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
-    <div className="w-full p-4">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold" > Title</h3>
-        <h3 className="text-lg md:text-sm mb-2 md:mb-3" > slug</h3>
-    </div>
-    </div>
-      {/* Card 3 */}
-    <div className="border-2 border-slate-500 rounded-md overflow-hidden" >
-                  <img src={card1} className="w-full min-h-36 md:h-48 object-cover curser-pointer" />
-    <div className="w-full p-4">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold" > Title</h3>
-        <h3 className="text-lg md:text-sm mb-2 md:mb-3" > slug</h3>
-    </div>
-    </div>
+            <div className="border-2 border-slate-500 rounded-md overflow-hidden ">
+              <img
+                src={card1}
+                className="w-full min-h-36 md:h-48 object-cover curser-pointer"
+              />
+              <div className="w-full p-4 ">
+                <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
+                  {" "}
+                  Title
+                </h3>
+                <h3 className="text-lg md:text-sm mb-2 md:mb-3"> slug</h3>
+              </div>
             </div>
-        </div>
 
+            {/* Card 2 */}
+            <div className="border-2 border-slate-500 rounded-md overflow-hidden">
+              <img
+                src={card1}
+                className="w-full min-h-36 md:h-48 object-cover curser-pointer"
+              />
+              <div className="w-full p-4">
+                <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
+                  {" "}
+                  Title
+                </h3>
+                <h3 className="text-lg md:text-sm mb-2 md:mb-3"> slug</h3>
+              </div>
+            </div>
+            {/* Card 3 */}
+            <div className="border-2 border-slate-500 rounded-md overflow-hidden">
+              <img
+                src={card1}
+                className="w-full min-h-36 md:h-48 object-cover curser-pointer"
+              />
+              <div className="w-full p-4">
+                <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
+                  {" "}
+                  Title
+                </h3>
+                <h3 className="text-lg md:text-sm mb-2 md:mb-3"> slug</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
